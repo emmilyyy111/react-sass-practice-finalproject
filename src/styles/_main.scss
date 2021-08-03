@@ -1,0 +1,29 @@
+// normalize our css
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// must import bootstrap before your own styles - otherwise your styles will be overwritten
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// import all other sass files
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './base/variables';
+@import './components/layout/header';
+@import './components/layout/footer';
+
+@import './scenes/services.scss';
+
+body {
+    @include default-font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+  
+  
